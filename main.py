@@ -19,7 +19,7 @@ def predict():
     if request.method == 'POST':
         #print(request.form.get('sepal_length'))
         try:
-            manufacturer = int(request.form['var1'])
+            manufacturer = int(request.form['var1']) # taking feature values
             transmission = int(request.form['var2'])
             transmission_type = float(request.form['var3'])
             engine_capacity = float(request.form['var4'])
